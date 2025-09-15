@@ -1,0 +1,35 @@
+# 핵심 ML 라이브러리
+tensorflow==2.14.0
+keras==2.14.0
+tensorboard==2.14.0
+mediapipe==0.10.21
+protobuf==4.25.3
+
+# 데이터 처리
+numpy==1.26.4
+pandas==2.3.2
+scipy==1.15.3
+
+# 컴퓨터 비전 (OpenCV 하나 선택)
+opencv-contrib-python==4.10.0.84
+
+# 머신러닝 유틸리티
+scikit-learn==1.5.2
+
+# 시각화
+matplotlib==3.10.6
+
+# Jupyter 환경
+jupyter==1.0.0
+ipykernel==6.30.1
+ipython==8.37.0
+
+# 기타 유틸리티
+tqdm==4.67.1
+pillow==11.3.0
+h5py==3.14.0
+
+# 개발 도구
+pytest==8.3.4
+black==24.10.0
+flake8==7.1.1
