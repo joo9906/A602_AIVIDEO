@@ -30,6 +30,8 @@ GPU 모델은  Tesla V100-PCIE-32GB 입니다.
 
 ### 데이터 전처리
 
+- `data-preprocessing` 폴더에서 `make_dataset.ipynb`는 영상에서 mediapipe로 좌표를 추출하는 코드입니다.
+- `data-preprocessing` 폴더에서 `csv_to_npz.ipynb`는 좌표를 모델 input으로 바꾸는 코드입니다.
 
 ### 모델 최적화, 경량화 과정입니다.
 https://www.notion.so/2721a5fc266380b9b570c431625cb788?source=copy_link
