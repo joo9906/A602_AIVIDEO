@@ -8,6 +8,7 @@ import os
 import json
 import pickle
 from dotenv import load_dotenv
+from model_route import ModelPath as MP
 
 # --- ENV: MODEL_PATH / LABEL_ENCODER_PATH ---
 load_dotenv()
@@ -140,8 +141,8 @@ def main():
         json.dump(json_buf, f, ensure_ascii=False, indent=2)
     print(f"[저장 완료] {OUTPUT_JSON} | frames: {len(json_buf['frames'])}")
 
-    MODEL_PATH = os.getenv("MODEL_PATH")
-    LABEL_ENCODER_PATH = os.getenv("LABEL_ENCODER_PATH")
+    MODEL_PATH = MP.MODEL_PATH
+    LABEL_ENCODER_PATH = MP.LABEL_ENCODER_PATH
     if not MODEL_PATH or not LABEL_ENCODER_PATH:
         raise RuntimeError("MODEL_PATH 또는 LABEL_ENCODER_PATH 환경변수가 설정되지 않았습니다.")
 
